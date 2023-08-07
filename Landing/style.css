@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("/HTML-CSS-Group-Project-Day1-Arman/image/hand-holding-mexican-coin.jpg");
+  background-size: cover;
+  background-color: rgba(174, 174, 174, 0.1);
+  font-family: font-family "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: rgba(177, 174, 174, 0.1);
+  color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: font-family "Poppins", sans-serif;
+}
+
+nav {
+  background-color: rgba(174, 174, 174, 10%);
+  color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.logo-image {
+  width: 100px;
+  height: 100px;
+  padding-left: 2%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  padding-left: 1%;
+}
+
+.logo h4 {
+  margin-left: 15px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  padding: 44;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  position: relative;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0.5;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+.Login {
+  color: rgba(44, 117, 226, 1);
+  font-size: 32px;
+  padding-right: 3%;
+}
+
+/* hero */
+#hero {
+  color: #fff;
+  padding: 100px 0;
+  padding-left: 5%;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(177, 174, 174, 0.1);
+}
+
+.hero.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  /* background-color: rgba(174, 174, 174, 10%); */
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero .Smart {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #007bff;
+}
+
+/* Gaya tombol CTA */
+.cta {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: rgba(123, 188, 69, 1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.1s;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA di-hover */
+.cta:hover {
+  background-color: rgba(123, 188, 69, 1);
+  transform: scale(0.95);
+}
+
+.cta:active {
+  background-color: rgba(123, 188, 69, 1);
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+.Login {
+  color: rgba(44, 117, 226, 1);
+  font-size: 32px;
+  padding-right: 3%;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s; /* Efek transisi pada perubahan transformasi dan box-shadow saat hover */
+}
+
+/* Efek hover pada .Login */
+.Login:hover {
+  transform: scale(0.95); /* Perkecil elemen saat di-hover */
+  box-shadow: none; /* Hapus efek bayangan saat di-hover */
+}
+
+.Login:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}
