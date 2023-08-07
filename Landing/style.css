@@ -1,6 +1,7 @@
 body {
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
   margin: 0;
-  font-family: Arial, sans-serif;
   background-image: url("/HTML-CSS-Group-Project-Day1-Arman/image/hand-holding-mexican-coin.jpg");
   background-size: cover;
   background-color: rgba(174, 174, 174, 0.1);
@@ -40,8 +41,15 @@ nav {
   padding-left: 1%;
 }
 
+.logo1 a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
 .logo h4 {
   margin-left: 15px;
+  list-style: none;
 }
 
 .nav-links {
