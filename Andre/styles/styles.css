@@ -1,0 +1,222 @@
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+.container-login {
+  background: linear-gradient(180deg, #3184ff 0%, #1b4179 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-login {
+  width: 535px;
+  height: 679px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #d9d9d9;
+  box-shadow: 5px 8px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 25px;
+  margin-bottom: 27px;
+}
+.label-login {
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-login {
+  color: #000;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  margin-bottom: 27px;
+  margin-top: 10px;
+}
+
+.text-input-group {
+  padding: 17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0;
+  width: 425px;
+  height: 69px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(44, 117, 226, 0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  gap: 22px;
+}
+
+.emailPic {
+  opacity: 30%;
+}
+
+.lockPic {
+  opacity: 30%;
+}
+
+.confirm-email {
+  padding: 17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 31px;
+  width: 425px;
+  height: 69px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(44, 117, 226, 0.2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  gap: 22px;
+}
+
+.label-info {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.text-input {
+  background: none;
+  border: none;
+  flex: 1;
+  outline: none;
+}
+
+.forget-password {
+  margin-top: 10px;
+  margin-bottom: 29px;
+  display: flex;
+  justify-content: end;
+  align-self: flex-end !important;
+  color: #2c75e2;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.loginIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.button {
+  width: 425px;
+  height: 69px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(44, 117, 226, 0.6);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  border: none;
+  margin-bottom: 13px;
+}
+
+.button:hover {
+  background-color: #2c75e2;
+}
+
+.forgot-button {
+  width: 425px;
+  height: 69px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(44, 117, 226, 0.6);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  border: none;
+  margin-top: 142px;
+}
+
+.forgot-button:hover {
+  background-color: #2c75e2;
+}
+
+.page-register {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.register-here {
+  font-family: "Poppins", sans-serif;
+  color: #2c75e2;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-login {
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .text-input-group {
+    width: 100% !important;
+  }
+
+  .button {
+    width: 100% !important;
+  }
+
+  .confirm-email {
+    width: 100% !important;
+  }
+
+  .forgot-button {
+    width: 100% !important;
+  }
+}
