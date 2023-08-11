@@ -197,26 +197,43 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .card-login {
-    width: 100%;
-    height: 100%;
-    box-shadow: none;
-    border-radius: 0;
+  .container-login .card-login {
+    width: 95%;
+    height: 95%;
+    align-items: center;
+    justify-content: center;
   }
 
-  .text-input-group {
+  .container-login .contact-form {
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-login .text-input-group {
+    width: 100% !important;
+    font-size: 95%;
+    justify-content: center;
+  }
+
+  .container-login .button {
     width: 100% !important;
   }
 
-  .button {
-    width: 100% !important;
+  .container-login .page-register {
+    font-size: 95%;
   }
 
-  .confirm-email {
+  .container-login .confirm-email {
     width: 100% !important;
+    font-size: 95%;
   }
 
-  .forgot-button {
+  .contact-form .label-info {
+    font-size: 85%;
+  }
+
+  .container-login .forgot-button {
     width: 100% !important;
   }
 }
