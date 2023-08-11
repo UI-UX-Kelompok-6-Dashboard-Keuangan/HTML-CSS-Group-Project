@@ -2,6 +2,7 @@
 body, h1, h2, h3, h4, p, ul, li {
   margin: 0;
   padding: 0;
+  background-size: cover;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
   width: 100%;
   height: 15vh;
   display: flex;
+  position: relative;
   justify-content:space-between;
   box-shadow: 0.2px 0.2px 0.2px 0.2px black;
   /* z-index: ; */
@@ -161,3 +163,94 @@ body {
   transform: scale(0.98);
   box-shadow: none;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  .navigation.active {
+    display: flex;
+  }
+
+  .navigation li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    padding: 40px;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: 0.3s;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .show-login {
+    display: block;
+  }
+
+  .hero {
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .brand {
+    font-size: 24px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .img img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .txt {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .cta {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  
+  .Login {
+    display: none;
+  }
+} 
