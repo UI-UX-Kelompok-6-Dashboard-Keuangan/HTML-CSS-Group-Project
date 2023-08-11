@@ -1,0 +1,257 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+  }
+  
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(42, 111, 214, 0.658); 
+    z-index: 1;
+  }
+  
+  /* Gaya untuk navbar */
+  .container-navbar{
+    background-color: rgba(83, 76, 76, 0.1);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    position: relative;
+    justify-content:space-between;
+    box-shadow: 0.2px 0.2px 0.2px 0.2px black;
+    /* z-index: ; */
+  }
+  
+  .brand {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    flex-direction: row;
+  }
+  
+  .img img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .txt {
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 44;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  
+  .navigation {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navigation li {
+    margin-right: 20px;
+  }
+  
+  .navigation a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s; 
+  }
+  
+  .navigation a:hover {
+    color: white;
+  }
+  
+  .navigation a::before {
+    content: "";
+    position: absolute;
+    width: 100%; 
+    height: 2px; 
+    background-color: white; 
+    bottom: -3px; 
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  .navigation a:hover::before {
+    transform: scaleX(1);
+  }
+  
+  
+  .Login {
+    font-family: "Poppins", sans-serif;
+    padding-right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Login a{
+    text-decoration:none ;
+    list-style: none;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .Login:hover {
+    transform: scale(0.95);
+    box-shadow: none; 
+  }
+  
+  .Login:active {
+    transform: scale(0.98);
+    box-shadow: none;
+  }
+  
+  /* Gaya untuk hero section */
+  #hero {
+    padding: 100px 0;
+    text-align: left;
+    width: 50%;
+    float: left;
+  }
+  
+  .hero.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .hero h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .hero .Smart {
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* Gaya tombol CTA */
+  .cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #7BBC45;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta:hover {
+    background-color: #7BBC45;
+    transform: scale(0.95);
+  }
+  
+  .cta:active {
+    background-color: #7BBC45;
+    transform: scale(0.98);
+    box-shadow: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navigation {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      z-index: 1;
+    }
+  
+    .navigation.active {
+      display: flex;
+    }
+  
+    .navigation li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 20px;
+      position: relative;
+      padding: 40px;
+      cursor: pointer;
+    }
+  
+    .bar {
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      margin: 2px 0;
+      transition: 0.3s;
+    }
+  
+    .login-btn {
+      display: none;
+    }
+  
+    .show-login {
+      display: block;
+    }
+  
+    .hero {
+      padding: 100px 0;
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+  
+    .hero h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 1);
+    }
+  
+    .brand {
+      font-size: 24px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .img img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+  
+    .txt {
+      color: #fff;
+      font-weight: 700;
+    }
+  
+    .cta {
+      font-size: 16px;
+      padding: 15px 30px;
+    }
+    
+    .Login {
+      display: none;
+    }
+  } 
